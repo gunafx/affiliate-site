@@ -12,3 +12,52 @@ body {
 	background-size: cover;
 	height: 90vh;	
 }
+.banner-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.banner-title {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.banner-desc p{
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+}
+.trick-image {
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.offer-line-item {
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: #eee;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+	margin-bottom: 30px;
+}
+
+a.share-trick {
+    font-size: 1rem;
+    display: inline-block;
+    color: #555;
+    padding: 5px;
+    text-align: center;
+    width: 35px;
+    border-radius: 80px;
+    background-color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+	transition: all 05s;
+}
+
+.a.share-trick:hover {
+	transform: scale(1.5);
+	color: #fff;
+	background-color: #eee;
+}
