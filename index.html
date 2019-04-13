@@ -107,7 +107,7 @@
 						</div>
 						<div class="banner-desc">
 							<p class="text-large">There some amazing sale is going, clcik below to availe them!</p>
-							<a href="#discounts" class="btn btn-primary btn-lg">
+							<a href="#discount" class="btn btn-primary btn-lg">
 								Learn More
 							</a>
 						</div>
@@ -127,44 +127,16 @@
 
 	<div id="offers" class="container mt-5">
 		<h2 class="display-3">Tips &amp; Tricks</h2>
-		<div class="row offers-wrap mt-5">
+		<div class="row offers-wrap mt-5" id="tips-list">
 			<div class="col-md-4">
 				<div class="offer-line-item">
-					<div class="trick-image" style="background-image: url(./img/tricks/amazon.jpeg)"></div>
+					<div class="trick-image" style="background-image: url({{image_link}})"></div>
 					<a class="share-trick" href="javascript:;">
 						<i class="fa fa-share-alt" aria-hidden="true"></i>
 					</a>
 					<div class="trick-content p-4">
-						<h3>Amazon Prime Offer</h3>
-						<p class="trick-desc">You can avail Amazon prime offer be following these tricks</p>
-						<button type="button" class="btn btn-outline-info">Learn How</button>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-4">
-				<div class="offer-line-item">
-					<div class="trick-image" style="background-image: url(./img/tricks/airtel.jpeg)"></div>
-					<a class="share-trick" href="javascript:;">
-						<i class="fa fa-share-alt" aria-hidden="true"></i>
-					</a>
-					<div class="trick-content p-4">
-						<h3>Airtel Offer</h3>
-						<p class="trick-desc">You can avail Amazon prime offer be following these tricks</p>
-						<button type="button" class="btn btn-outline-info">Learn How</button>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-4">
-				<div class="offer-line-item">
-					<div class="trick-image" style="background-image: url(./img/tricks/netflix.jpeg)"></div>
-					<a class="share-trick" href="javascript:;">
-						<i class="fa fa-share-alt" aria-hidden="true"></i>
-					</a>
-					<div class="trick-content p-4">
-						<h3>Netflix Offer</h3>
-						<p class="trick-desc">You can avail Netflix offer be following these tricks</p>
+						<h3>{{title}}</h3>
+						<p class="trick-desc">{{short_description}}</p>
 						<button type="button" class="btn btn-outline-info">Learn How</button>
 					</div>
 				</div>
@@ -172,8 +144,147 @@
 			
 		</div>
 	</div>
-	
+	<div class="discount-wrap">
+		<div id="discount" class="container mt-5">
+			<h2 class="display-3">Product Discounts</h2>
+			<div class="row products-wrap">
+				<div class="col-md-3 products-line-item">
+					<img class="product-image" src="./img/products/headphone.jpeg" />
+					<div class="product-content">
+						<h4 class="product-title">
+							{{title}}
+						</h4>
+						<p class="product-desc">
+							{{description}}
+							High end phones with powerfull bass, isolation, noise cancellation
+						</p>
 
+						<span class="original-price">&#8377 2,500</span>
+						<span class="disc-price">&#8377 1,500</span>
+						<span class="disc-lable">40% off</span>
+						<a href="#offers" class="btn btn-success btn-md buy-now">
+							<i class="fa fa-shopping-cart"></i> Buy Now
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 products-line-item">
+					<img class="product-image" src="./img/products/laptop.jpeg" />
+					<div class="product-content">
+						<h4 class="product-title">
+							Macbook Pro
+						</h4>
+						<p class="product-desc">
+							The ultimate  MacBook Pro features faster processors, upgraded memory
+						</p>
+
+						<span class="original-price">&#8377 1,82,500</span>
+						<span class="disc-price">&#8377 1,51,500</span>
+						<span class="disc-lable">20% off</span>
+						<a href="#offers" class="btn btn-success btn-md buy-now">
+							<i class="fa fa-shopping-cart"></i> Buy Now
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 products-line-item">
+					<img class="product-image" src="./img/products/shoes.jpeg" />
+					<div class="product-content">
+						<h4 class="product-title">
+							Nike Runner
+						</h4>
+						<p class="product-desc">
+							Best running shoes from Nike, most stylish and duralble like a tank
+						</p>
+
+						<span class="original-price">&#8377 4,800</span>
+						<span class="disc-price">&#8377 2,370</span>
+						<span class="disc-lable">57% off</span>
+						<a href="#offers" class="btn btn-success btn-md buy-now">
+							<i class="fa fa-shopping-cart"></i> Buy Now
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 products-line-item">
+					<img class="product-image" src="./img/products/oil.jpeg" />
+					<div class="product-content">
+						<h4 class="product-title">
+							Maui Moisture
+						</h4>
+						<p class="product-desc">
+							High quality Moiturizure exported from Brazil made of herbals from amzon forest
+						</p>
+
+						<span class="original-price">&#8377 3,800</span>
+						<span class="disc-price">&#8377 1,270</span>
+						<span class="disc-lable">60% off</span>
+						<a href="#offers" class="btn btn-success btn-md buy-now">
+							<i class="fa fa-shopping-cart"></i> Buy Now
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="coupon-wrap">
+		<div id="coupon" class="container mt-5">
+			<h2 class="display-3">Coupon Codes</h2>
+			<div class="row coupon-wrap mt-5">
+				<div class="col-md-2 coupon-line-item">
+					<div class="coupon-detail">
+						<div class="company-name">Uber</div>
+						<div class="coupon-details">50% cashback upto &#8377 100. This offer is valid till May 31st 2019</div>
+					</div>
+					<div class="coupon-code">
+						SUMMER50
+					</div>
+				</div>
+				<div class="col-md-2 coupon-line-item">
+					<div class="coupon-detail">
+						<div class="company-name">Swiggy</div>
+						<div class="coupon-details">Flat &#8377 150 off. This offer is valid till May 31st 2019</div>
+					</div>
+					<div class="coupon-code">
+						FLAT150
+					</div>
+				</div>
+				<div class="col-md-2 coupon-line-item">
+					<div class="coupon-detail">
+						<div class="company-name">Amazon</div>
+						<div class="coupon-details">20% cashback upto &#8377 100. This offer is valid till May 31st 2019</div>
+					</div>
+					<div class="coupon-code">
+						AMZON50
+					</div>
+				</div>
+				<div class="col-md-2 coupon-line-item">
+					<div class="coupon-detail">
+						<div class="company-name">Zomato</div>
+						<div class="coupon-details">Flat &#8377 50 off. This offer is valid till May 31st 2019</div>
+					</div>
+					<div class="coupon-code">
+						SUMMER50
+					</div>
+				</div>
+				<div class="col-md-2 coupon-line-item">
+					<div class="coupon-detail">
+						<div class="company-name">PayTm</div>
+						<div class="coupon-details">50% cashback upto &#8377 100. This offer is valid till May 31st 2019</div>
+					</div>
+					<div class="coupon-code">
+						SUMMER50
+					</div>
+				</div>
+				<div class="col-md-2 coupon-line-item">
+					<div class="coupon-detail">
+						<div class="company-name">Uber</div>
+						<div class="coupon-details">50% cashback upto &#8377 100. This offer is valid till May 31st 2019</div>
+					</div>
+					<div class="coupon-code">
+						SUMMER50
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/vendor/modernizr-3.7.1.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script>
