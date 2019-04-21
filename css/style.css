@@ -88,6 +88,7 @@ a.share-trick:hover {
 
 .products-line-item {
 	position: relative;
+	margin-bottom: 30px;
 }
 
 .product-content {
@@ -134,4 +135,12 @@ a.share-trick:hover {
 
 #coupon {
 	margin-bottom: 30px;
+}
+
+.coupon-wrap {
+	padding-bottom:
+}
+
+.coupon-line-item {
+	margin-bottom: 20px;
 }
