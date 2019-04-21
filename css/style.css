@@ -1,30 +1,39 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Quicksand', sans-serif;
-	
+
 }
+
 .carousel-inner img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
+
 .image-wrap {
 	width: 100%;
 	background-position: center;
 	background-size: cover;
-	height: 90vh;	
+	height: 98vh;
 }
+
 .banner-content {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
+
 .banner-title {
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-.banner-desc p{
+
+.banner-desc p {
 	padding: 10px;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
+
 .trick-image {
 	height: 200px;
 	background-position: center;
@@ -37,22 +46,22 @@ body {
 	background-color: #eee;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 	margin-bottom: 30px;
 }
 
 a.share-trick {
-    font-size: 1rem;
-    display: inline-block;
-    color: #555;
-    padding: 5px;
-    text-align: center;
-    width: 35px;
-    border-radius: 80px;
-    background-color: #fff;
-    position: absolute;
-    top: 15px;
-    right: 30px;
+	font-size: 1rem;
+	display: inline-block;
+	color: #555;
+	padding: 5px;
+	text-align: center;
+	width: 35px;
+	border-radius: 80px;
+	background-color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 30px;
 	transition: all 0.5s;
 }
 
@@ -61,6 +70,7 @@ a.share-trick:hover {
 	color: #fff;
 	background-color: #555;
 }
+
 .product-image {
 	width: 100%;
 	display: inline-block;
@@ -103,34 +113,36 @@ a.share-trick:hover {
 	left: 25px;
 	line-height: 0.9;
 	display: inline-block;
-    width: 40px;
-    height: 40px;
-    font-weight: bolder;
-    color: #fff;
-    padding: 7px 0;
+	width: 40px;
+	height: 40px;
+	font-weight: bolder;
+	color: #fff;
+	padding: 7px 0;
 	text-align: center;
 	border-radius: 50px;
 	background-color: #ff4d4d
 }
+
 .company-name {
-    padding: 10px;
+	padding: 10px;
 	color: #fff;
-    background-color: #555;
+	background-color: #555;
 }
+
 .coupon-details {
-    padding: 10px;
-    border-left: 1px solid #555;
-    border-right: 1px solid #555;
+	padding: 10px;
+	border-left: 1px solid #555;
+	border-right: 1px solid #555;
 	height: 120px
 }
 
 .coupon-code {
 	font-family: monospace;
-    font-weight: bolder;
-    padding: 10px;
-    text-align: center;
-    color: #b17333;
-    border: 2px dotted #b17333;
+	font-weight: bolder;
+	padding: 10px;
+	text-align: center;
+	color: #b17333;
+	border: 2px dotted #b17333;
 }
 
 #coupon {
@@ -143,4 +155,138 @@ a.share-trick:hover {
 
 .coupon-line-item {
 	margin-bottom: 20px;
+}
+
+
+
+
+
+/*--- anu code --*/
+.top-navigation {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+
+.social {
+	background-color: #eee;
+	display: inline-block;
+	list-style: none;
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	top: 200px;
+	padding: 0px;
+}
+.social .fa {
+	padding: 10px;
+	font-size: 20px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+
+}
+
+.social .fa:hover {
+	opacity: 0.7;
+}
+
+.social .fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.social .fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+.social .fa-google {
+	background: #dd4b39;
+	color: white;
+}
+
+
+.social .fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+.vl {
+	border-left: 2px dashed;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	margin-top: 300;
+}
+
+.footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #343a40;
+	color: white;
+	padding: 20px;
+	text-align: right;
+}
+.footer p {
+	margin: 0;
+}
+.about-us-wrap {
+	padding-top: 30px;
+	background-color: #ddd;
+}
+
+#offers {
+
+}
+
+.container {
+	padding-top: 50px;
+}
+
+#mobile-menu {
+	display: none;
+}
+
+
+/*-- for mobile ---*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	.display-1 {
+		font-size: 4rem;
+		line-height: normal;
+	}
+	.display-3 {
+		font-size: 3rem;
+	}
+	.social {
+		display: none;
+	}
+	.ul-links {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background-color: #343a40;
+		top: 50px;
+		color: #111;
+		right: 0;
+	}
+	.ul-links.show {
+		display: block;
+	}
+	#mobile-menu {
+		display: inline-block;
+		padding: 10px;
+		height: 40px;
+		width: 40px;
+		color: #fff;
+	}
+
+	.navbar-dark .navbar-nav .nav-link {
+		color: #eee;
+	}
 }

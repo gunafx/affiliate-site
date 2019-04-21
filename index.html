@@ -17,13 +17,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<title>Promo Site</title>
-	
+
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+
+		</style>
 </head>
 
 <body>
@@ -31,33 +34,49 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark top-navigation">
 		<!-- Brand -->
-		<a class="navbar-brand mr-auto" href="#">Onederlot</a>
+		<a class="navbar-brand mr-auto" href="#">Mr.Updater</a>
+		<div class="banner-desc">
+			<ul class="social">
+				<!-- Add font awesome icons -->
+				<li><a href="#" class="fa fa-facebook"></a></li>
+				<li><a href="#" class="fa fa-twitter"></a></li>
+				<li><a href="#" class="fa fa-google"></a></li>
 
-		<!-- Links -->
-		<ul class="navbar-nav nav-right">
-			<li class="nav-item">
-				<a class="nav-link" href="#">Offers</a>
-			</li>
-			<!-- Dropdown -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-					Discounts
-				</a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#">Products</a>
-					<a class="dropdown-item" href="#">On Sale</a>
-					<a class="dropdown-item" href="#">Limited Time</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Coupons</a>
-			</li>
+				<li><a href="#" class="fa fa-instagram"></a></li>
 
-		</ul>
+			</ul> </div>
+			<!-- Links -->
+			<a id="mobile-menu" href="javascript:;"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			<ul class="navbar-nav nav-right ul-links">
+				<li class="nav-item">
+					<a class="nav-link" href="#offers">Offers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#discount">Discounts</a>
+				</li>
+				<!-- Dropdown
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Discounts
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Products</a>
+						<a class="dropdown-item" href="#">On Sale</a>
+						<a class="dropdown-item" href="#">Limited Time</a>
+					</div>
+				</li> -->
+				<li class="nav-item">
+					<a class="nav-link" href="#coupons">Coupons</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about-us">About Us</a>
+				</li>
+
+			</ul>
 	</nav>
-	
+
 	<div id="slider" class="carousel slide" data-ride="carousel">
 
 		<!-- Indicators -->
@@ -125,7 +144,7 @@
 		</a>
 	</div>
 
-	<div id="offers" class="container mt-5">
+	<div id="offers" class="container">
 		<h2 class="display-3">Tips &amp; Tricks</h2>
 		<div class="row offers-wrap mt-5" id="tips-list">
 			<div class="col-md-4">
@@ -141,7 +160,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 	<div class="discount-wrap">
@@ -185,6 +204,36 @@
 				</div>
 
 			</div>
+		</div>
+	</div>
+
+	<div class="about-us-wrap">
+		<div id="about-us" class="container mt-5">
+			<h2 class="display-3">About Us</h2>
+			<div class="row offers-wrap mt-5">
+				<div class="trick-content p-4">
+
+					<p class="trick-desc"><b>Mr.Updater </b>is mainly a platform for offered deals,loots and tricks. It is a public website where people can get latest offered deals,loots on online shops/stores. This is mainly made for the people not to waste money as well as time, we value your precious time. We Assure you that we give you the best deals, loots and offers available at your fingertip. We also update everyday's cashbacks, unlimited tricks and some self money making tricks. Why to waste money and time?.. when you have everything under a single platform.</p>
+					<div class="row offers-wrap mt-5">
+						<div class="col-md-8 join">
+							<p><b> JOIN OUR WHATSAPP GROUP</b></p>
+
+							<a href="#" class="btn btn-success btn-lg">
+								JOIN
+							</a>
+						</div>
+						<div class="col-md-4">
+							<p><strong>Email:</strong><a href="mailto:mrupdater999@gmail.com"> mrupdater999@gmail.com</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-wrap">
+			<p>All rights reserved Mr.Updater 2019</p>
 		</div>
 	</div>
 	<script src="js/vendor/modernizr-3.7.1.min.js"></script>

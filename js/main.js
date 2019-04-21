@@ -66,3 +66,10 @@ function updateTemplate(template, data) {
 	});
 	return tempArray;
 }
+
+
+$('document').ready(function(e) {
+	$("#mobile-menu").on("click", function(e) {
+		$(".ul-links").toggleClass("show");
+	});
+});
