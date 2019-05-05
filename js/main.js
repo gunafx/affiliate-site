@@ -14,6 +14,18 @@ getsheetData(sheetUrl+"tips").then(function(data){
 		tempElm = document.getElementById(tipsElm);
 
 	tempElm.innerHTML = tempStr.join(" ");
+
+	$(".open-long-desc").on("click", function(e) {
+		var elm = $(this).siblings(".long-desc-wrap");
+		elm.show();
+		$('html').addClass("stop-scroll");
+	});
+
+	$(".close").on("click", function(e) {
+		var elm = $(this).parents(".long-desc-wrap");
+		elm.hide();
+		$('html').removeClass("stop-scroll");
+	});
 });
 
 //discount data
@@ -60,7 +72,8 @@ function updateTemplate(template, data) {
 
 		var allKeys = Object.keys(v), t = template;
 		allKeys.map(function(k,inn){
-			t = t.replace("{{"+k+"}}", v[k]);
+			var str = new RegExp("{{"+k+"}}", "g");
+			t = t.replace(str, v[k]);
 		});
 		tempArray.push(t);
 	});
@@ -72,4 +85,5 @@ $('document').ready(function(e) {
 	$("#mobile-menu").on("click", function(e) {
 		$(".ul-links").toggleClass("show");
 	});
+
 });

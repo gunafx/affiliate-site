@@ -50,6 +50,13 @@ body {
 	margin-bottom: 30px;
 }
 
+a.share-trick.close {
+	opacity: 1;
+	padding: 8px 5px;
+	right: 15px;
+	top: 15px;
+	position: fixed
+}
 a.share-trick {
 	font-size: 1rem;
 	display: inline-block;
@@ -58,11 +65,12 @@ a.share-trick {
 	text-align: center;
 	width: 35px;
 	border-radius: 80px;
-	background-color: #fff;
+	background-color: #eee;
 	position: absolute;
 	top: 15px;
 	right: 30px;
 	transition: all 0.5s;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
 a.share-trick:hover {

@@ -21,7 +21,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<title>Promo Site</title>
+	<title>Mr.Updater</title>
 
 	<link rel="stylesheet" href="css/style.css">
 	<style>
@@ -99,6 +99,7 @@
 							<a href="#offers" class="btn btn-primary btn-lg">
 								Learn More
 							</a>
+
 						</div>
 					</div>
 				</div>
@@ -156,7 +157,18 @@
 					<div class="trick-content p-4">
 						<h3>{{title}}</h3>
 						<p class="trick-desc">{{short_description}}</p>
-						<button type="button" class="btn btn-outline-info">Learn How</button>
+						<a href="javascript:;" class="btn btn-outline-info open-long-desc">Learn How</a>
+
+						<div class="row justify-content-center long-desc-wrap" style="display: none;">
+							<div class="col-11 col-md-8 p-8 long-desc-inner">
+								<a class="share-trick close" href="javascript:;">
+									<i class="fa fa-close" aria-hidden="true"></i>
+								</a>
+								<h3>{{title}}</h3>
+								<div>{{long_description}}</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

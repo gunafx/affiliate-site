@@ -17,7 +17,9 @@
     font-size: 1em;
     line-height: 1.4;
 }
-
+html.stop-scroll {
+	overflow: hidden;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -293,3 +295,29 @@ textarea {
 }
 
 
+
+.long-desc-wrap.row {
+	position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+	display: none;
+	z-index: 10;
+	margin: auto;
+}
+
+.long-desc-inner {
+    background-color: #fff;
+    height: 80%;
+    overflow-y: auto;
+	overflow-x: hidden;
+    padding: 20px;
+    margin: auto;
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
